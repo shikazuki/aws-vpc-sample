@@ -5,6 +5,8 @@ Resources:
     Type: AWS::EC2::VPC
     Properties:
       CidrBlock: "172.33.0.0/16"
+      EnableDnsHostnames: true
+      EnableDnsSupport: true
   InternetGateway:
     Type: AWS::EC2::InternetGateway
   InternetGatewayAttachment:
